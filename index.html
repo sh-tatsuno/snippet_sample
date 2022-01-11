@@ -11,18 +11,6 @@
   
   <!--    下記 pendoのsnippet-->
   <script>
-    function getNowYMDhmsStr(){
-      const date = new Date()
-      const Y = date.getFullYear()
-      const M = ("00" + (date.getMonth()+1)).slice(-2)
-      const D = ("00" + date.getDate()).slice(-2)
-      const h = ("00" + date.getHours()).slice(-2)
-      const m = ("00" + date.getMinutes()).slice(-2)
-      const s = ("00" + date.getSeconds()).slice(-2)
-      return Y + M + D + h + m + s
-     };
- 
-    var now = getNowYMDhmsStr();
    
 (function(apiKey){
     (function(p,e,n,d,o){var v,w,x,y,z;o=p[d]=p[d]||{};o._q=o._q||[];
@@ -30,6 +18,20 @@
         o[m]=o[m]||function(){o._q[m===v[0]?'unshift':'push']([m].concat([].slice.call(arguments,0)));};})(v[w]);
         y=e.createElement(n);y.async=!0;y.src='https://cdn.pendo.io/agent/static/'+apiKey+'/pendo.js';
         z=e.getElementsByTagName(n)[0];z.parentNode.insertBefore(y,z);})(window,document,'script','pendo');
+ 
+       function getNowYMDhmsStr(){
+        const date = new Date()
+        const Y = date.getFullYear()
+        const M = ("00" + (date.getMonth()+1)).slice(-2)
+        const D = ("00" + date.getDate()).slice(-2)
+        const h = ("00" + date.getHours()).slice(-2)
+        const m = ("00" + date.getMinutes()).slice(-2)
+        const s = ("00" + date.getSeconds()).slice(-2)
+        return Y + M + D + h + m + s
+      };
+ 
+       var now = getNowYMDhmsStr();
+       console.log(`今の時間は　${now}`)
 
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
