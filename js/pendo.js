@@ -19,10 +19,10 @@
       const userArray = ["test1", "test2", "test3", "test4","test5", "test6", "test7", "test8","test9", "test10"]
           
        let nowUser = userArray[Math.floor(Math.random() * userArray.length)];
-       console.log(`今あなたは　${nowUser}です`)
         
        const userIdDiv = document.getElementById('user-id');
        if (userIdDiv) {
+           console.log(`今あなたは　${nowUser}です`)
            userIdDiv.textContent = nowUser;
        }
 
