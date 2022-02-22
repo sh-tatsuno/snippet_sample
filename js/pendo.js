@@ -19,7 +19,6 @@ var nowUser = userArray[Math.floor(Math.random() * userArray.length)];
         return Y + M + D + h + m + s
       };
         
-        console.log(`今あなたは　${nowUser}です`)
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
         pendo.initialize({
