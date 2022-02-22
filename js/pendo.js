@@ -20,6 +20,11 @@
           
        let nowUser = userArray[Math.floor(Math.random() * userArray.length)];
        console.log(`今あなたは　${nowUser}です`)
+        
+       const userIdDiv = document.getElementById('user-id');
+       if (userIdDiv) {
+           userIdDiv.textContent = nowUser;
+       }
 
         // Call this whenever information about your visitors becomes available
         // Please use Strings, Numbers, or Bools for value types.
