@@ -480,6 +480,12 @@
 	<script>
 	　var userName = "山田太郎";
 	　document.cookie = 'old=27';
+		
+	const userIdDiv = document.getElementById('user-id');
+       	if (userIdDiv) {
+	console.log(`今あなたは　${nowUser}です`)
+           userIdDiv.textContent = nowUser;
+       	}
 	</script>
 
 	</body>
