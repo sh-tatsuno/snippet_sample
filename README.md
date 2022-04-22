@@ -1,6 +1,6 @@
 # snippet_sample
 以下ページURL<br>
-https://geekshu625.github.io/snippet_sample/
+https://sh-tatsuno.github.io/snippet_sample/
 
 # 引用
 TITLE: 
