@@ -48,6 +48,12 @@ cc.run({
 
     onChange: function (cookie, changed_preferences) {
         console.log('onChange fired ...');
+        // If analytics category is disabled => disable google analytics 
+        if (!cc.allowedCategory('analytics')) { 
+            typeof gtag === 'function' && gtag('consent', 'update', { 
+                'analytics_storage': 'denied' 
+            }); 
+        } 
         
     },
 
