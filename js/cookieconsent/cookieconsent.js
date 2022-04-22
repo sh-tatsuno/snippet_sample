@@ -1040,6 +1040,8 @@
 
             // Retrieve all cookies
             var all_cookies_array = _getCookie('', 'all');
+            _log("list cookie");
+            _log(all_cookies_array);
 
             // delete cookies on 'www.domain.com' and '.www.domain.com' (can also be without www)
             var domains = [_config.cookie_domain, '.'+_config.cookie_domain];
