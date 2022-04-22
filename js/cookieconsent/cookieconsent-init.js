@@ -94,7 +94,7 @@ cc.run({
                         description: 'These cookies allow the website to remember the choices you have made in the past',
                         toggle: {
                             value: 'analytics',     // there are no default categories => you specify them
-                            enabled: false,
+                            enabled: true,
                             readonly: false
                         },
                         cookie_table: [
@@ -117,7 +117,7 @@ cc.run({
                         description: 'These cookies collect information about how you use the website, which pages you visited and which links you clicked on. All of the data is anonymized and cannot be used to identify you',
                         toggle: {
                             value: 'targeting',
-                            enabled: true,
+                            enabled: false,
                             readonly: false
                         }
                     }, {
