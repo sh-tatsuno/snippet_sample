@@ -1040,6 +1040,7 @@
 
             // Retrieve all cookies
             var all_cookies_array = _getCookie('', 'all');
+            console.log("hogehoge");
             _log("list cookie");
             _log(all_cookies_array);
 
