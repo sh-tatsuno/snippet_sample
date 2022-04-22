@@ -48,6 +48,7 @@ cc.run({
 
     onChange: function (cookie, changed_preferences) {
         console.log('onChange fired ...');
+        
     },
 
     languages: {
@@ -99,14 +100,14 @@ cc.run({
                         cookie_table: [
                             {
                                 col1: '^_ga',
-                                col2: 'google.com',
+                                col2: '.techtouch.jp',
                                 col3: '2 years',
                                 col4: 'description ...',
                                 is_regex: true
                             },
                             {
-                                col1: '_gid',
-                                col2: 'google.com',
+                                col1: '_tt_token',
+                                col2: '.techtouch.jp',
                                 col3: '1 day',
                                 col4: 'description ...',
                             }
