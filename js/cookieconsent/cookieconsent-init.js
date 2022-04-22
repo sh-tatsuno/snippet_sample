@@ -100,7 +100,7 @@ cc.run({
                         description: 'These cookies allow the website to remember the choices you have made in the past',
                         toggle: {
                             value: 'analytics',     // there are no default categories => you specify them
-                            enabled: true,
+                            enabled: false,
                             readonly: false
                         },
                         cookie_table: [
