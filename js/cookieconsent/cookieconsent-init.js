@@ -28,12 +28,12 @@ cc.run({
     gui_options: {
         consent_modal: {
             layout: 'box',                      // box,cloud,bar
-            position: 'bottom right',           // bottom,middle,top + left,right,center
+            position: 'bottom left',           // bottom,middle,top + left,right,center
             transition: 'slide'                 // zoom,slide
         },
         settings_modal: {
             layout: 'box',                      // box,bar
-            position: 'left',                // right,left (available only if bar layout selected)
+            // position: 'left',                // right,left (available only if bar layout selected)
             transition: 'slide'                 // zoom,slide
         }
     },
@@ -50,7 +50,7 @@ cc.run({
             analyticsEnabled: cc.allowedCategory('analytics'),
         };
         var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
-        var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t);
+        var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t)
     },
 
     onChange: function (cookie, changed_preferences) {
