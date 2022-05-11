@@ -33,7 +33,7 @@ cc.run({
         },
         settings_modal: {
             layout: 'box',                      // box,bar
-            // position: 'left',                // right,left (available only if bar layout selected)
+            position: 'left',                // right,left (available only if bar layout selected)
             transition: 'slide'                 // zoom,slide
         }
     },
