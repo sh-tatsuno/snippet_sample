@@ -495,6 +495,7 @@
 
             // Add primary button if not falsy
             if(primary_btn_data){
+                console.log(primary_btn_data)
 
                 if(!consent_primary_btn){
                     consent_primary_btn = _createNode('button');
@@ -518,6 +519,7 @@
 
             // Add secondary button if not falsy
             if(secondary_btn_data){
+                console.log(secondary_btn_data)
 
                 if(!consent_secondary_btn){
                     consent_secondary_btn = _createNode('button');
