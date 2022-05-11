@@ -509,7 +509,7 @@
                     _addEvent(consent_primary_btn, "click", function(){
                         _cookieconsent.hide();
                         _log("CookieConsent [ACCEPT]: cookie_consent was accepted!");
-                        _log("konnichiwa");
+                        _log(_accept_type);
                         _cookieconsent.accept(_accept_type);
                         _log("hello");
                     });
