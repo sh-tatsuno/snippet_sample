@@ -44,17 +44,21 @@ cc.run({
 
     onAccept: function (cookie) {
         console.log('onAccept fired ...');
+        if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;
+        window.TechtouchObject = {
+            organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
+            analyticsEnabled: cc.allowedCategory('analytics'),
+        };
+        var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
+        var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t)
     },
 
     onChange: function (cookie, changed_preferences) {
         console.log('onChange fired ...');
-        // If analytics category is disabled => disable google analytics 
-        if (!cc.allowedCategory('analytics')) { 
-            typeof gtag === 'function' && gtag('consent', 'update', { 
-                'analytics_storage': 'denied' 
-            }); 
-        } 
-        
+        window.TechtouchObject = {
+            organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
+            analyticsEnabled: cc.allowedCategory('analytics'),
+        };        
     },
 
     languages: {
