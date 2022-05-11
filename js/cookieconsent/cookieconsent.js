@@ -495,7 +495,6 @@
 
             // Add primary button if not falsy
             if(primary_btn_data){
-                console.log(primary_btn_data)
 
                 if(!consent_primary_btn){
                     consent_primary_btn = _createNode('button');
@@ -511,6 +510,7 @@
                         _cookieconsent.hide();
                         _log("CookieConsent [ACCEPT]: cookie_consent was accepted!");
                         _cookieconsent.accept(_accept_type);
+                        _log("hello");
                     });
                 }
 
@@ -519,7 +519,6 @@
 
             // Add secondary button if not falsy
             if(secondary_btn_data){
-                console.log(secondary_btn_data)
 
                 if(!consent_secondary_btn){
                     consent_secondary_btn = _createNode('button');
