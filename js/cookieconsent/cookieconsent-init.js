@@ -44,13 +44,9 @@ cc.run({
 
     onAccept: function (cookie) {
         console.log('onAccept fired ...');
-        // if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;
-        // window.TechtouchObject = {
-        //     organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
-        //     analyticsEnabled: cc.allowedCategory('analytics'),
-        // };
-        // var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
-        // var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t)
+        const cookies = document.cookie.split(';').forEach(function(value) {
+            console.log(value);
+        })
     },
 
     onChange: function (cookie, changed_preferences) {
