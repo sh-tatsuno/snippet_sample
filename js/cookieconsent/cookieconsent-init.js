@@ -116,9 +116,9 @@ cc.run({
                                 is_regex: true
                             },
                             {
-                                col1: '_tt_token',
-                                col2: '.techtouch.jp',
-                                col3: '1 day',
+                                col1: '_tt_geuid',
+                                col2: '..sh-tatsuno.github.io',
+                                col3: '1 year',
                                 col4: 'description ...',
                             }
                         ]
