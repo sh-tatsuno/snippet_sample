@@ -117,7 +117,7 @@ cc.run({
                             },
                             {
                                 col1: '_tt_geuid',
-                                col2: '..sh-tatsuno.github.io',
+                                col2: '.sh-tatsuno.github.io',
                                 col3: '1 year',
                                 col4: 'description ...',
                             }
