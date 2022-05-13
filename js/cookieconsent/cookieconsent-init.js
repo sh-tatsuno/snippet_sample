@@ -44,11 +44,14 @@ cc.run({
 
     onAccept: function (cookie) {
         console.log('onAccept fired ...');
-        const cookies = document.cookie.split(';').forEach(function(value) {
+        document.cookie.split(';').forEach(function(value) {
             console.log(value);
         })
         console.log('erase');
-        cc.eraseCookies(['_tt_geuid'])
+        cc.eraseCookies(['_tt_geuid'],'/','.sh-tatsuno.github.io');
+        document.cookie.split(';').forEach(function(value) {
+            console.log(value);
+        })
     },
 
     onChange: function (cookie, changed_preferences) {
