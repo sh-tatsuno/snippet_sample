@@ -47,6 +47,7 @@ cc.run({
         const cookies = document.cookie.split(';').forEach(function(value) {
             console.log(value);
         })
+        console.log('erase');
         cc.eraseCookies(['_tt_geuid'])
     },
 
