@@ -29,7 +29,8 @@ cc.run({
         consent_modal: {
             layout: 'box',                      // box,cloud,bar
             position: 'center left',           // bottom,middle,top + left,right,center
-            transition: 'slide'                 // zoom,slide
+            transition: 'slide',                 // zoom,slide
+            swap_buttons: true
         },
         settings_modal: {
             layout: 'box',                      // box,bar
