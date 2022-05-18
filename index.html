@@ -97,7 +97,7 @@
 							</ul>
 						</li>
 						<li><a href="contact.html">Contact</a></li>
-						<li class="btn-cta"><a href="#"><span>Reservation</span></a></li>
+						<li class="btn-cta"><a href="policy.html"><span>Privacy Policy</span></a></li>
 						<li　>
 						<span id="user-id">Contact</span>
 						</li>
@@ -482,17 +482,23 @@
 
 	<!-- Main -->
 	<script src="js/main.js"></script>
+	<script defer src="js/cookieconsent/cookieconsent.js"></script>
+    <script defer src="js/cookieconsent/cookieconsent-init.js"></script>
 	<script>
 		!function () {
-		  if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;
-		  window.TechtouchObject = {
-			organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
-			analyticsEnabled: true,
-		  };
-		  var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
-		  var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t);
+			if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;
+			if !('TechtouchObject' in window) {
+				window.TechtouchObject = {
+					...
+					organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
+					analyticsEnabled: true,
+			};
+			}
+			
+			var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
+			var t = document.getElementsByTagName("script")[0]; t.parentNode.insertBefore(e, t);
 		}()
-	  </script>
+	</script>
 	
 	<script>
 	　var userName = "山田太郎";
@@ -503,8 +509,7 @@
            userIdTag.textContent = `今あなたは　${nowUser}です`;
        	}
 	</script>
-	<script defer src="js/cookieconsent/cookieconsent.js"></script>
-    <script defer src="js/cookieconsent/cookieconsent-init.js"></script>
+	
 
 	</body>
 </html>
