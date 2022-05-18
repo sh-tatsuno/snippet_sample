@@ -222,9 +222,8 @@
 		<div class="overlay"></div>
 		<div class="gtco-container text-center">
 			<div class="display-t">
-				<div class="display-tc">
-					<h1>&ldquo; Their high quality of service makes me back over and over again!&rdquo;</h1>
-					<p>&mdash; John Doe, CEO of XYZ Co.</p>
+				<div class="display-tc" data-cc="c-settings">
+					<h1>&ldquo; Policy Popup &rdquo;</h1>
 				</div>	
 			</div>
 		</div>
@@ -293,12 +292,11 @@
     <script>
 		!function () {
 			if ('TechtouchObject' in window && document.querySelector('script#techtouch-snippet')) return;
-			if !('TechtouchObject' in window) {
+			if (!('TechtouchObject' in window)) {
 				window.TechtouchObject = {
-					...
 					organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
 					analyticsEnabled: true,
-			};
+			    };
 			}
 			
 			var e = document.createElement("script"); e.async = 1, e.src = "https://stg-apps.ws.techtouch.jp/script/orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01/main.js"; e.id = "techtouch-snippet";
