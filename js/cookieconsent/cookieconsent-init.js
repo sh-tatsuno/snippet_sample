@@ -28,12 +28,12 @@ cc.run({
     gui_options: {
         consent_modal: {
             layout: 'box',                      // box,cloud,bar
-            position: 'center left',           // bottom,middle,top + left,right,center
+            position: 'bottom left',           // bottom,middle,top + left,right,center
             transition: 'slide'                 // zoom,slide
         },
         settings_modal: {
             layout: 'box',                      // box,bar
-            // position: 'left',                // right,left (available only if bar layout selected)
+            position: 'left',                // right,left (available only if bar layout selected)
             transition: 'slide'                 // zoom,slide
         }
     },
