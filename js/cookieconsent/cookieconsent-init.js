@@ -74,7 +74,8 @@ cc.run({
                 secondary_btn: {
                     text: 'Reject all',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
-                }
+                },
+                close_btn_label: 'Close'
             },
             settings_modal: {
                 title: logo,
