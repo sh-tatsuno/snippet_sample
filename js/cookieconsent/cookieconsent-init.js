@@ -27,7 +27,7 @@ cc.run({
 
     gui_options: {
         consent_modal: {
-            layout: 'bar',                      // box,cloud,bar
+            layout: 'box',                      // box,cloud,bar
             position: 'bottom left',           // bottom,middle,top + left,right,center
             transition: 'slide'                 // zoom,slide
         },
@@ -74,8 +74,7 @@ cc.run({
                 secondary_btn: {
                     text: 'Reject all',
                     role: 'accept_necessary'        // 'settings' or 'accept_necessary'
-                },
-                close_btn_label: 'Close'
+                }
             },
             settings_modal: {
                 title: logo,
