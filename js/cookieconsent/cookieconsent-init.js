@@ -44,22 +44,20 @@ cc.run({
 
     onAccept: function (cookie) {
         console.log('onAccept fired ...');
-        document.cookie.split(';').forEach(function(value) {
-            console.log(value);
-        })
-        console.log('erase');
-        cc.eraseCookies(['_tt_geuid'],'/','.sh-tatsuno.github.io');
-        document.cookie.split(';').forEach(function(value) {
-            console.log(value);
-        })
+        window.TechtouchObject = {
+            organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
+            analyticsEnabled: cc.allowedCategory('analytics'),
+        };     
+        if (!(cc.allowedCategory('analytics'))) {
+            cc.eraseCookies(['_tt_geuid'],'/','.sh-tatsuno.github.io');
+        }
     },
 
     onChange: function (cookie, changed_preferences) {
         console.log('onChange fired ...');
-        // window.TechtouchObject = {
-        //     organizationUuid: "orga-625635c0-26dd-e064-fc5b-1f1e35f4cd01",
-        //     analyticsEnabled: cc.allowedCategory('analytics'),
-        // };        
+        if (!(cc.allowedCategory('analytics'))) {
+            cc.eraseCookies(['_tt_geuid'],'/','.sh-tatsuno.github.io');
+        }      
     },
 
     languages: {
