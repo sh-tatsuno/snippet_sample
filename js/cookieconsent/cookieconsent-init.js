@@ -7,7 +7,7 @@ var cookie = '🍪';
 
 // run plugin with config object
 cc.run({
-    current_lang : 'jp',
+    current_lang : 'ja',
     autoclear_cookies : true,                   // default: false
     cookie_name: 'cc_cookie',                   // default: 'cc_cookie'
     cookie_expiration : 365,                    // default: 182
@@ -136,7 +136,7 @@ cc.run({
                 ]
             }
         },
-        'jp': {
+        'ja': {
             consent_modal: {
                 title: 'クッキーの表示',
                 description: 'テックタッチのクッキー説明です <button type="button" data-cc="c-settings" class="cc-link">同意の詳細確認</button>',
